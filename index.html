@@ -1,0 +1,53 @@
+
+<style>
+h1,p,{
+text-align:center;
+margin: 80px 0;
+}
+</style>
+<h1>Шатурный Дмитрий</h1>
+<h3>Задание 1</h3>
+<xmp> 
+var letters = [ ];
+var inputStringArr = "Backend As A Service".split(" ");
+for (var i = 0; i<inputStringArr.length; i++) {
+  var firstChar = inputStringArr[i].charAt(0); 
+  letters.push(firstChar);
+}
+
+console.log(letters);
+
+letters.join("") 
+
+\\\\\\\\\\\\\\\\\\\\Вместо метода .join() можно так\\\\\\\\\\\\\\\\\\\\\\\\\\
+var str="";
+for(var i=0; i<letters.length; i++){
+str = str + letters[i];
+}
+
+</xmp> 
+
+<h3>Задание 2</h3>
+<xmp>
+function testDate (date) {
+ if (date === new Date().toLocaleString()) {
+      return date;
+ }else {
+      return "Неверный тип данных";
+       }
+}
+
+testDate(new Date())                              - "Неверный тип данных";
+
+
+testDate(new Date().toLocaleString())             -  дата;
+</xmp>
+
+<h3>Задание 3</h3>
+
+поставить Breakpoints 5 строчке......<br>
+что остановить выполнение функции с вредоносным кодом.<br>
+поменять через метод .replaсe() содержание userText, а именно"onload" на пустое место.<br>
+снять Breakpoints и проверить...<br>
+
+userText = userText.replace("onload", "")
