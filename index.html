@@ -10,37 +10,30 @@ margin: 80px 0;
 <xmp> 
 var letters = [ ];
 var inputStringArr = "Backend As A Service".split(" ");
-for (var i = 0; i<inputStringArr.length; i++) {
-  var firstChar = inputStringArr[i].charAt(0); 
+  for (var i = 0; i<inputStringArr.length; i++) {
+var firstChar = inputStringArr[i].charAt(0); 
   letters.push(firstChar);
 }
 
 console.log(letters);
 
-letters.join("") 
-
-\\\\\\\\\\\\\\\\\\\\Вместо метода .join() можно так\\\\\\\\\\\\\\\\\\\\\\\\\\
-var str="";
-for(var i=0; i<letters.length; i++){
-str = str + letters[i];
-}
-
+letters.join(""); 
 </xmp> 
 
-<h3>Задание 2</h3>
+<h3>Задание 2 (исправлено - не верно понято условие)</h3>
 <xmp>
-function testDate (date) {
- if (date === new Date().toLocaleString()) {
-      return date;
- }else {
-      return "Неверный тип данных";
+function testTypeof (arg) {
+  if ((typeof arg) === 'number') {
+      var now = new Date();
+      console.log(now.toLocaleString())
+}else  {
+      console.log('Неверный тип данных');
        }
 }
 
-testDate(new Date())                              - "Неверный тип данных";
-
-
-testDate(new Date().toLocaleString())             -  дата;
+testTypeof(25);
+testTypeof("string");                             
+             
 </xmp>
 
 <h3>Задание 3</h3>
