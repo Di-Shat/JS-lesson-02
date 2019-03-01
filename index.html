@@ -45,11 +45,9 @@ testTypeof("string");
              
 </xmp>
 
-<h3>Задание 3</h3>
-
-поставить Breakpoints 5 строчке......<br>
-что остановить выполнение функции с вредоносным кодом.<br>
-поменять через метод .replaсe() содержание userText, а именно"onload" на пустое место.<br>
-снять Breakpoints и проверить...<br>
-
-userText = userText.replace("onload", "")
+<h3>Задание 3(исправлено)</h3>
+<xmp>
+function testUserText ( userText ) {
+   return userText.replace('<','>');
+}
+</xmp>
